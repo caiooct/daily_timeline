@@ -4,5 +4,5 @@ class Timeline {
   late DateTime actualDatetime;
   late List<Activity> activitiesList;
 
-  Timeline(DateTime actualDatetime, {List<Activity> activitiesList = const []});
+  Timeline(this.actualDatetime, [this.activitiesList = const []]);
 }
