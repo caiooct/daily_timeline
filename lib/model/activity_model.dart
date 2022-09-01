@@ -6,14 +6,14 @@ class Activity {
   late DateTime initialDatetime;
   DateTime? finalDatetime;
   late DateTime createdAt;
-  late IconData icon;
+  IconData icon;
 
   Activity({
-    title,
-    description,
-    initialDatetime,
-    finalDatetime,
-    createdAt,
-    icon,
+    required this.title,
+    this.description,
+    required this.initialDatetime,
+    this.finalDatetime,
+    required this.createdAt,
+    this.icon = Icons.event_note,
   });
 }
