@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Activity {
   late String title;
-  String? description;
+  String description;
   late DateTime initialDatetime;
   DateTime? finalDatetime;
   late DateTime createdAt;
@@ -10,7 +10,7 @@ class Activity {
 
   Activity({
     required this.title,
-    this.description,
+    this.description = "",
     required this.initialDatetime,
     this.finalDatetime,
     required this.createdAt,
