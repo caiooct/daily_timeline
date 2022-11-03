@@ -12,22 +12,23 @@ class ActivityCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const constraints =
-        BoxConstraints(minWidth: 344, maxWidth: 344, minHeight: 148);
     return Card(
       elevation: 8,
       child: Container(
         padding: const EdgeInsets.all(16),
-        constraints: constraints,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              activity.title,
-              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 24),
-            Text(activity.description ?? ''),
+            Text(activity.title, style: Theme.of(context).textTheme.headline6),
+            const SizedBox(height: 8),
+            if (activity.description.isNotEmpty)
+              Text(
+                activity.description,
+                style: Theme.of(context)
+                    .textTheme
+                    .bodyText2
+                    ?.copyWith(height: 1.5),
+              ),
           ],
         ),
       ),
