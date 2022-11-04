@@ -1,10 +1,13 @@
+import 'package:app_flutter/splash_screen.dart';
 import 'package:app_flutter/timeline_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'activities_mock.dart';
 import 'colors.dart';
 
-void main() {
+void main() async {
+  runApp(const SplashScreen());
+  await Future.delayed(const Duration(milliseconds: 500));
   runApp(const MyApp());
 }
 
