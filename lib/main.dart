@@ -19,7 +19,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Daily Timeline Routine",
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          primary: primary,
+          onPrimary: primaryDark,
+        ),
       ),
       home: Scaffold(
         appBar: AppBar(
