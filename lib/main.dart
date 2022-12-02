@@ -1,9 +1,9 @@
-import 'package:app_flutter/splash_screen.dart';
-import 'package:app_flutter/timeline_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'activities_mock.dart';
-import 'colors.dart';
+import 'settings/activities_mock.dart';
+import 'settings/colors.dart';
+import 'ui/screens/splash/splash_screen.dart';
+import 'ui/screens/timeline/timeline_screen.dart';
 
 void main() async {
   runApp(const SplashScreen());

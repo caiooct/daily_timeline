@@ -1,9 +1,9 @@
-import 'package:app_flutter/colors.dart';
-import 'package:app_flutter/widget/activity_card_widget.dart';
 import 'package:flutter/material.dart';
 
-import 'activities_mock.dart';
-import 'model/activity_model.dart';
+import '../../../models/activity_model.dart';
+import '../../../settings/activities_mock.dart';
+import '../../../settings/colors.dart';
+import 'widgets/activity_card_widget.dart';
 
 class TimelineScreen extends StatelessWidget {
   final List<Activity> activitiesList;
