@@ -1,4 +1,4 @@
-import 'package:app_flutter/model/activity_model.dart';
+import 'activity_model.dart';
 
 class Timeline {
   late DateTime actualDatetime;
