@@ -1,9 +1,8 @@
+import 'package:app_flutter/ui/screens/login/login_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'settings/activities_mock.dart';
 import 'settings/colors.dart';
 import 'ui/screens/splash/splash_screen.dart';
-import 'ui/screens/timeline/timeline_screen.dart';
 
 void main() async {
   runApp(const SplashScreen());
@@ -24,13 +23,7 @@ class MyApp extends StatelessWidget {
           onPrimary: primaryDark,
         ),
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: primary,
-          title: const Text("Daily Timeline"),
-        ),
-        body: TimelineScreen(activitiesList: activitiesListMock),
-      ),
+      home: const LoginScreen(),
     );
   }
 }
